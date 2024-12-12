@@ -1,0 +1,7 @@
+module.exports.authService = require('./auth.service')
+module.exports.configurationService = require('./configuration.service.js')
+module.exports.notificationService = require('./notification.service.js')
+module.exports.roleService = require('./role.service')
+module.exports.tokenService = require('./token.service')
+module.exports.userService = require('./user.service')
+module.exports.emailService = require('./email.service.js')

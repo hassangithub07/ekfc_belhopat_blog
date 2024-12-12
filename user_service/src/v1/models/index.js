@@ -1,0 +1,5 @@
+module.exports.Configuration = require('./configuration.model')
+module.exports.NotificationsModel = require('./notification.model')
+module.exports.Role = require('./role.model')
+module.exports.Token = require('./token.model')
+module.exports.User = require('./user.model')

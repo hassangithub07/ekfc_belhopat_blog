@@ -1,0 +1,6 @@
+module.exports.blogService = require('./blog.service.js')
+module.exports.commentBlogService = require('./comment_blog.service.js')
+module.exports.likeCommentBlogService = require('./like_comment_blog.service.js')
+module.exports.likeBlogService = require('./like_blog.service.js')
+module.exports.notificationService = require('./notification.service.js')
+module.exports.reportBlogService = require('./report_blog.service.js')

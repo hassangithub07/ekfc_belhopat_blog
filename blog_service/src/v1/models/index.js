@@ -1,0 +1,8 @@
+module.exports.CommentBlog = require('./comment_blog.model')
+module.exports.LikeCommentBlog = require('./like_comment_blog.model')
+module.exports.LikeBlog = require('./like_blog.model')
+module.exports.Blog = require('./blog.model')
+module.exports.ReportBlog = require('./report_blog.model')
+module.exports.Role = require('./role.model')
+module.exports.Token = require('./token.model')
+module.exports.User = require('./user.model')

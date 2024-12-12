@@ -1,0 +1,30 @@
+services:
+  userservice:
+    build:
+      context: ./user_service   # Path to user_service's folder
+    ports:
+      - "4101:4101"            # Map container port 3000 to your machine
+    networks:
+      - microservices-network
+    volumes:
+      - ./user_service:/app     # Mount local code into the container
+      - /app/node_modules      # Prevent overwriting node_modules
+    environment:
+      - NODE_ENV=development
+
+  blogservice:
+    build:
+      context: ./blog_service   # Path to blog_service's folder
+    ports:
+      - "4001:4001"            # Map container port 4000 to your machine
+    networks:
+      - microservices-network
+    volumes:
+      - ./blog_service:/app     # Mount local code into the container
+      - /app/node_modules      # Prevent overwriting node_modules
+    environment:
+      - NODE_ENV=development
+
+networks:
+  microservices-network:
+    driver: bridge
